@@ -1,0 +1,22 @@
+@mixin base-button {  
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 0.2rem 1rem;
+  width:  100%;
+  &:hover {
+      border: 1px solid black;
+  }
+
+}
+
+.restablecer {
+  @include base-button();
+  background-color: rgb(228, 220, 220);
+}
+
+.enviar {
+  @include base-button();
+  background-color: rgb(255, 177, 177);
+
+}
